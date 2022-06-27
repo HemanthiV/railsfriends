@@ -1,0 +1,43 @@
+<!--  <p style="color: green"><%#= notice %></p>
+
+<%#= render @friend %>
+
+<div>
+  <%#= link_to "Edit this friend", edit_friend_path(friend) %> |
+  <%#= link_to "Back to friends", @friends_path %>
+
+  <%#= button_to "Destroy this friend", friend, method: :delete %>
+</div>  -->
+
+
+   <div class="p-2 bg-success text-dark bg-opacity-25">
+    
+  <strong>Firstname:</strong>
+    <%= @friend.firstname %> 
+  </p>
+
+  <p>
+    <strong>Lastname:</strong>
+    <%= @friend.lastname %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= @friend.email %>
+  </p>
+
+  <p>
+    <strong>Phone:</strong>
+    <%= @friend.phone %>
+  </p>
+
+  <p>
+    <strong>Twitter:</strong>
+    <%= @friend.twitter %>
+  </p>
+<div>
+   <%= link_to "Edit this friend", edit_friend_path(@friend) , class: "btn btn-secondary" %> 
+  <%= link_to "Back to friends", friends_path , class: "btn btn-secondary btn-dark" %>
+</div>
+
+</div>
